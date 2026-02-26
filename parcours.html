@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>École & Entreprise | Jeniffan J. Arulthasan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body { background-color: #000000; color: #a1a1aa; overflow-x: hidden; }
+        .bg-grid { background-size: 40px 40px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px); position: fixed; inset: 0; z-index: -1; }
+        .border-subtle { border: 1px solid #27272a; }
+        .card-hover:hover { border-color: #ffffff; transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="relative min-h-screen flex flex-col font-sans selection:bg-white selection:text-black">
+
+    <div class="bg-grid"></div>
+
+    <nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-subtle">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-bold text-xl tracking-tight text-white z-50 relative">JENIFFAN_</a>
+            <div class="hidden lg:flex space-x-8 text-xs font-semibold uppercase tracking-widest text-zinc-400">
+                <a href="index.html" class="hover:text-white transition-colors">Accueil</a>
+                <a href="propos.html" class="hover:text-white transition-colors">À propos</a>
+                <a href="bts-sio.html" class="hover:text-white transition-colors">BTS SIO</a>
+                <a href="parcours.html" class="text-white">École/Entreprise</a>
+                <a href="e5.html" class="hover:text-white transition-colors">E5</a>
+                <a href="e6.html" class="hover:text-white transition-colors">E6</a>
+                <a href="veille.html" class="hover:text-white transition-colors">Veille</a>
+                <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+            </div>
+            <button onclick="toggleMenu()" class="lg:hidden text-zinc-400 hover:text-white focus:outline-none z-50 relative">
+                <i class="fas fa-bars text-2xl" id="menu-icon"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="fixed inset-0 bg-black z-40 hidden flex-col justify-center items-center space-y-8 text-sm font-semibold uppercase tracking-widest text-zinc-400 lg:hidden">
+            <a href="index.html" class="hover:text-white transition-colors">Accueil</a>
+            <a href="propos.html" class="hover:text-white transition-colors">À propos</a>
+            <a href="bts-sio.html" class="hover:text-white transition-colors">BTS SIO</a>
+            <a href="parcours.html" class="text-white">École/Entreprise</a>
+            <a href="e5.html" class="hover:text-white transition-colors">E5</a>
+            <a href="e6.html" class="hover:text-white transition-colors">E6</a>
+            <a href="veille.html" class="hover:text-white transition-colors">Veille</a>
+            <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-7xl mx-auto px-6 pt-32 pb-20 w-full space-y-12">
+        
+        <div class="mb-8 lg:mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tighter">
+                École & Entreprise.
+            </h1>
+            <p class="text-zinc-400 text-base md:text-lg">Mon environnement académique et mes objectifs professionnels.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+            
+            <div class="bg-[#09090b] p-6 sm:p-10 rounded-sm border border-subtle card-hover flex flex-col">
+                <div class="flex justify-between items-start mb-8">
+                    <div>
+                        <h2 class="text-lg sm:text-xl font-bold uppercase tracking-widest text-white">Paris Ynov Campus</h2>
+                        <span class="text-xs sm:text-sm text-zinc-500 font-mono mt-1 block">Paris Nanterre (Campus Ouest)</span>
+                        <span class="text-[10px] text-zinc-400 uppercase tracking-widest mt-2 block">École supérieure des métiers du digital</span>
+                    </div>
+                    <img src="assets/img/ynov-logo.png" alt="Logo Ynov" class="w-20 h-20 object-contain hidden sm:block">
+                </div>
+
+                <div class="space-y-6 mb-8">
+                    <div>
+                        <span class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest block mb-1">Slogan</span>
+                        <p class="text-zinc-300 text-sm italic">Le digital s'apprend par la pratique.</p>
+                    </div>
+
+                    <div>
+                        <span class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest block mb-1">Description</span>
+                        <p class="text-zinc-300 text-sm leading-relaxed">
+                            Paris Ynov Campus est une institution dédiée à la formation aux métiers de demain. L'école se distingue par une pédagogie active centrée sur la réalisation de projets réels, favorisant l'interdisciplinarité (YDAYS) et l'insertion professionnelle immédiate grâce à l'alternance.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest block mb-2">Formations</span>
+                        <ul class="text-xs text-zinc-400 space-y-1.5 leading-relaxed">
+                            <li>- Informatique & Développement (Full Stack, Mobile, Cloud)</li>
+                            <li class="text-white font-semibold">- Cybersécurité & Réseaux <span class="text-[9px] bg-white text-black px-1.5 py-0.5 rounded-sm ml-1 uppercase tracking-widest">Ma filière</span></li>
+                            <li>- Intelligence Artificielle & Data Science</li>
+                            <li>- Création & Digital Design (UX/UI, Direction Artistique)</li>
+                            <li>- 3D, Animation & Jeux Vidéo</li>
+                            <li>- Marketing & Communication Digitale</li>
+                            <li>- Audiovisuel & Son</li>
+                            <li>- Architecture d'Intérieur & Bâtiment Numérique</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-auto pt-6 border-t border-[#27272a] flex justify-between items-center w-full">
+                    <span class="text-zinc-400 font-mono text-sm tracking-tight">contact-paris@ynov.com</span>
+                    <a href="https://www.ynov.com/campus/paris" target="_blank" class="text-white font-mono text-sm tracking-tight hover:underline flex items-center gap-2">
+                        Visiter le site <i class="fas fa-external-link-alt text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-[#09090b] p-6 sm:p-10 rounded-sm border border-subtle card-hover flex flex-col text-white">
+                
+                <div class="mb-8 flex-grow">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                        <h2 class="text-lg sm:text-xl font-bold uppercase tracking-widest text-white">Recherche Alternance</h2>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <span class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest block mb-1">Rythme</span>
+                            <div class="font-semibold text-sm text-zinc-200">3 jours Entreprise / 2 jours École</div>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest block mb-1">Disponibilité</span>
+                            <div class="font-semibold text-sm text-zinc-200">Septembre 2026 (12 mois)</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest block mb-1">Objectif</span>
+                        <p class="text-sm leading-relaxed text-zinc-300">
+                            Intégrer une DSI pour participer activement au maintien en condition opérationnelle (MCO), à l'administration des serveurs et à la mise en œuvre des politiques de sécurité.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border-t border-[#27272a] pt-6 sm:pt-8 mb-8">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                        <h2 class="text-lg sm:text-xl font-bold uppercase tracking-widest text-white">Recherche Stage</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <span class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest block mb-1">Période</span>
+                            <div class="font-semibold text-sm text-zinc-200">Juillet 2026</div>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest block mb-1">Durée</span>
+                            <div class="font-semibold text-sm text-zinc-200">5 semaines</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest block mb-1">Objectif</span>
+                        <p class="text-sm leading-relaxed text-zinc-300">
+                            Découvrir l'environnement d'une équipe IT, consolider mes bases en support utilisateur et assister à la gestion d'infrastructures réseaux.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 w-full mt-auto">
+                    <a href="contact.html" class="flex-1 py-4 sm:py-3 bg-white text-black text-center font-bold uppercase text-xs tracking-widest hover:bg-zinc-200 transition rounded-sm">
+                        Contact Alternance
+                    </a>
+                    <a href="contact.html" class="flex-1 py-4 sm:py-3 bg-white text-black text-center font-bold uppercase text-xs tracking-widest hover:bg-zinc-200 transition rounded-sm">
+                        Contact Stage
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="border-t border-subtle py-8 text-center text-xs font-mono text-zinc-500">
+        <p>© 2026 Jeniffan John Arulthasan. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            if(menu.classList.contains('flex')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+                document.body.style.overflow = 'hidden';
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS SIO | Jeniffan J. Arulthasan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body { background-color: #000000; color: #a1a1aa; overflow-x: hidden; }
+        .bg-grid { background-size: 40px 40px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px); position: fixed; inset: 0; z-index: -1; }
+        .border-subtle { border: 1px solid #27272a; }
+        .card-hover:hover { border-color: #ffffff; transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="relative min-h-screen flex flex-col font-sans selection:bg-white selection:text-black">
+
+    <div class="bg-grid"></div>
+
+    <nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-subtle">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-bold text-xl tracking-tight text-white z-50 relative">JENIFFAN_</a>
+            <div class="hidden lg:flex space-x-8 text-xs font-semibold uppercase tracking-widest text-zinc-400">
+                <a href="index.html" class="hover:text-white transition-colors">Accueil</a>
+                <a href="propos.html" class="hover:text-white transition-colors">À propos</a>
+                <a href="bts-sio.html" class="text-white">BTS SIO</a>
+                <a href="parcours.html" class="hover:text-white transition-colors">École/Entreprise</a>
+                <a href="e5.html" class="hover:text-white transition-colors">E5</a>
+                <a href="e6.html" class="hover:text-white transition-colors">E6</a>
+                <a href="veille.html" class="hover:text-white transition-colors">Veille</a>
+                <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+            </div>
+            <button onclick="toggleMenu()" class="lg:hidden text-zinc-400 hover:text-white focus:outline-none z-50 relative">
+                <i class="fas fa-bars text-2xl" id="menu-icon"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="fixed inset-0 bg-black z-40 hidden flex-col justify-center items-center space-y-8 text-sm font-semibold uppercase tracking-widest text-zinc-400 lg:hidden">
+            <a href="index.html" class="hover:text-white transition-colors">Accueil</a>
+            <a href="propos.html" class="hover:text-white transition-colors">À propos</a>
+            <a href="bts-sio.html" class="text-white">BTS SIO</a>
+            <a href="parcours.html" class="hover:text-white transition-colors">École/Entreprise</a>
+            <a href="e5.html" class="hover:text-white transition-colors">E5</a>
+            <a href="e6.html" class="hover:text-white transition-colors">E6</a>
+            <a href="veille.html" class="hover:text-white transition-colors">Veille</a>
+            <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-7xl mx-auto px-6 pt-32 pb-20 w-full space-y-12 lg:space-y-16">
+        
+        <div class="text-center max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tighter">
+                Le BTS SIO.
+            </h1>
+            <p class="text-zinc-400 leading-relaxed text-sm md:text-base">
+                Le BTS Services Informatiques aux Organisations forme des professionnels capables de gérer le patrimoine informatique d'une structure. Il prépare aux métiers de l'administration réseau, de la cybersécurité et du développement.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 lg:gap-8 items-stretch">
+            
+            <div class="bg-[#09090b] p-6 lg:p-8 rounded-sm border border-subtle card-hover flex flex-col justify-center text-center">
+                <i class="fas fa-code text-3xl text-zinc-500 mb-6"></i>
+                <h3 class="text-xl font-bold text-white mb-2">Option SLAM</h3>
+                <p class="text-[10px] text-zinc-500 uppercase tracking-widest mb-4">Solutions Logicielles & Applications</p>
+                <p class="text-sm text-zinc-400 leading-relaxed">
+                    Spécialisation en conception et développement d'applications. Formation aux langages web, mobiles et à l'intégration logicielle.
+                </p>
+            </div>
+
+            <div class="bg-[#09090b] p-6 lg:p-8 rounded-sm border border-white relative flex flex-col justify-center text-center">
+                <div class="absolute top-4 right-4 bg-white text-black text-[9px] font-bold px-3 py-1 uppercase tracking-widest rounded-sm">
+                    Ma Spécialité
+                </div>
+                <i class="fas fa-network-wired text-3xl text-white mb-6"></i>
+                <h3 class="text-xl font-bold text-white mb-2">Option SISR</h3>
+                <p class="text-[10px] text-zinc-400 uppercase tracking-widest mb-4">Solutions Infrastructure & Réseaux</p>
+                <p class="text-sm text-zinc-300 leading-relaxed">
+                    Spécialisation en administration des systèmes et réseaux. Gestion de la cybersécurité, maintenance des équipements et supervision des infrastructures.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-sm font-mono text-white uppercase tracking-widest mb-6 lg:mb-8">> Compétences du Référentiel</h3>
+            
+            <div class="grid md:grid-cols-3 gap-6 items-stretch">
+                <div class="bg-[#09090b] border border-subtle rounded-sm p-6 card-hover">
+                    <i class="fas fa-headset text-xl text-white mb-4"></i>
+                    <h3 class="text-lg font-bold text-white mb-2">Support & Services</h3>
+                    <p class="text-xs text-zinc-400 mb-6">Gestion des incidents, assistance et maintien en condition opérationnelle.</p>
+                    <ul class="text-xs text-zinc-500 space-y-2 border-t border-subtle pt-4">
+                        <li class="flex items-center gap-2"><i class="fas fa-angle-right text-white"></i> Ticketing (GLPI) & SLA</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-angle-right text-white"></i> Accompagnement utilisateurs</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-angle-right text-white"></i> Résolution d'incidents</li>
+                    </ul>
+                </div>
+
+                <div class="bg-[#09090b] border border-subtle rounded-sm p-6 card-hover">
+                    <i class="fas fa-server text-xl text-white mb-4"></i>
+                    <h3 class="text-lg font-bold text-white mb-2">Administration Système</h3>
+                    <p class="text-xs text-zinc-400 mb-6">Conception, installation et maintenance des infrastructures et serveurs.</p>
+                    <ul class="text-xs text-zinc-500 space-y-2 border-t border-subtle pt-4">
+                        <li class="flex items-center gap-2"><i class="fas fa-angle-right text-white"></i> Serveurs Win/Linux</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-angle-right text-white"></i> Active Directory & GPO</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-angle-right text-white"></i> Virtualisation (VMware)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-[#09090b] border border-subtle rounded-sm p-6 card-hover">
+                    <i class="fas fa-shield-halved text-xl text-white mb-4"></i>
+                    <h3 class="text-lg font-bold text-white mb-2">Cybersécurité</h3>
+                    <p class="text-xs text-zinc-400 mb-6">Protection des données, gestion des accès et analyse des risques numériques.</p>
+                    <ul class="text-xs text-zinc-500 space-y-2 border-t border-subtle pt-4">
+                        <li class="flex items-center gap-2"><i class="fas fa-angle-right text-white"></i> Sécurisation réseau</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-angle-right text-white"></i> Veille vulnérabilités</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-angle-right text-white"></i> Politiques de sécurité</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4 lg:gap-6 pt-8 border-t border-subtle">
+            <a href="e5.html" class="p-6 lg:p-8 bg-[#09090b] border border-subtle rounded-sm card-hover group flex items-center justify-between">
+                <div>
+                    <span class="text-white font-mono text-xs uppercase tracking-widest">> Épreuve E5</span>
+                    <h3 class="text-xl lg:text-2xl font-bold text-white mt-2 group-hover:translate-x-1 transition-transform">Projets Tech.</h3>
+                </div>
+                <i class="fas fa-arrow-right text-zinc-600 group-hover:text-white transition-colors"></i>
+            </a>
+            <a href="e6.html" class="p-6 lg:p-8 bg-[#09090b] border border-subtle rounded-sm card-hover group flex items-center justify-between">
+                <div>
+                    <span class="text-white font-mono text-xs uppercase tracking-widest">> Épreuve E6</span>
+                    <h3 class="text-xl lg:text-2xl font-bold text-white mt-2 group-hover:translate-x-1 transition-transform">Parcours Pro.</h3>
+                </div>
+                <i class="fas fa-arrow-right text-zinc-600 group-hover:text-white transition-colors"></i>
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="border-t border-subtle py-8 text-center text-xs font-mono text-zinc-500">
+        <p>© 2026 Jeniffan John Arulthasan. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            if(menu.classList.contains('flex')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+                document.body.style.overflow = 'hidden';
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>

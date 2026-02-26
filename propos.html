@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos | Jeniffan J. Arulthasan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body { background-color: #000000; color: #a1a1aa; overflow-x: hidden; }
+        .bg-grid { background-size: 40px 40px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px); position: fixed; inset: 0; z-index: -1; }
+        .border-subtle { border: 1px solid #27272a; }
+    </style>
+</head>
+<body class="relative min-h-screen flex flex-col font-sans selection:bg-white selection:text-black">
+
+    <div class="bg-grid"></div>
+
+    <nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-subtle">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-bold text-xl tracking-tight text-white z-50 relative">JENIFFAN_</a>
+            <div class="hidden lg:flex space-x-8 text-xs font-semibold uppercase tracking-widest text-zinc-400">
+                <a href="index.html" class="hover:text-white transition-colors">Accueil</a>
+                <a href="propos.html" class="text-white">À propos</a>
+                <a href="bts-sio.html" class="hover:text-white transition-colors">BTS SIO</a>
+                <a href="parcours.html" class="hover:text-white transition-colors">École/Entreprise</a>
+                <a href="e5.html" class="hover:text-white transition-colors">E5</a>
+                <a href="e6.html" class="hover:text-white transition-colors">E6</a>
+                <a href="veille.html" class="hover:text-white transition-colors">Veille</a>
+                <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+            </div>
+            <button onclick="toggleMenu()" class="lg:hidden text-zinc-400 hover:text-white focus:outline-none z-50 relative">
+                <i class="fas fa-bars text-2xl" id="menu-icon"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="fixed inset-0 bg-black z-40 hidden flex-col justify-center items-center space-y-8 text-sm font-semibold uppercase tracking-widest text-zinc-400 lg:hidden">
+            <a href="index.html" class="hover:text-white transition-colors">Accueil</a>
+            <a href="propos.html" class="text-white">À propos</a>
+            <a href="bts-sio.html" class="hover:text-white transition-colors">BTS SIO</a>
+            <a href="parcours.html" class="hover:text-white transition-colors">École/Entreprise</a>
+            <a href="e5.html" class="hover:text-white transition-colors">E5</a>
+            <a href="e6.html" class="hover:text-white transition-colors">E6</a>
+            <a href="veille.html" class="hover:text-white transition-colors">Veille</a>
+            <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-7xl mx-auto px-6 pt-32 pb-20 w-full">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+            
+            <div class="lg:col-span-4">
+                <div class="bg-[#050505] p-6 lg:p-8 border border-[#27272a] hover:border-white transition-colors duration-300 rounded-sm lg:sticky lg:top-32">
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold text-white tracking-tight">Jeniffan J. Arulthasan</h3>
+                        <p class="text-xs text-zinc-500 font-mono mt-2"><i class="fas fa-map-marker-alt mr-2"></i>Paris, Île-de-France</p>
+                    </div>
+
+                    <div class="space-y-4 mb-8 border-b border-[#27272a] pb-8">
+                        <p class="text-[10px] text-white font-mono uppercase tracking-widest mb-4">> Certifications</p>
+                        
+                        <a href="assets/docs/secnumacademie.pdf" target="_blank" class="flex items-center gap-3 group cursor-pointer block">
+                            <i class="fas fa-check text-white group-hover:text-zinc-300 transition-colors"></i>
+                            <div>
+                                <div class="text-xs text-white font-semibold group-hover:underline decoration-white underline-offset-2">SecNumAcadémie</div>
+                                <div class="text-[10px] text-zinc-500 uppercase">ANSSI - Voir le certificat</div>
+                            </div>
+                        </a>
+                        
+                        <div class="flex items-center gap-3 mt-4">
+                            <i class="fas fa-spinner fa-spin text-zinc-500"></i>
+                            <div>
+                                <div class="text-xs text-zinc-400 font-semibold">Certifié en Cybersécurité</div>
+                                <div class="text-[10px] text-zinc-500 uppercase">ISC2 (En cours)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <a href="mailto:johnjeniffan@hotmail.com" class="flex items-center gap-4 text-zinc-400 hover:text-white transition group">
+                            <i class="fas fa-envelope"></i><span class="text-sm font-mono truncate">johnjeniffan@hotmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jeniffan-john-arulthasan-2758152b6/" target="_blank" class="flex items-center gap-4 text-zinc-400 hover:text-white transition group">
+                            <i class="fab fa-linkedin"></i><span class="text-sm font-mono">Profil LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/Jeniffan7v" target="_blank" class="flex items-center gap-4 text-zinc-400 hover:text-white transition group">
+                            <i class="fab fa-github"></i><span class="text-sm font-mono">Dépôts GitHub</span>
+                        </a>
+                    </div>
+
+                    <div class="mt-8 pt-8 border-t border-[#27272a]">
+                        <a href="assets/docs/cv.pdf" target="_blank" class="w-full py-4 bg-white text-black text-center font-bold text-xs uppercase tracking-widest hover:bg-zinc-200 transition flex justify-center items-center gap-2 rounded-sm">
+                            <i class="fas fa-file-pdf"></i> Mon CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-8">
+                <div class="mb-16">
+                    <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tighter">À propos de moi.</h1>
+                    <div class="text-zinc-400 leading-relaxed text-sm lg:text-base space-y-4 font-light">
+                        <p>Passionné par l'informatique et la résolution de problèmes techniques, je suis actuellement étudiant en <strong class="text-white font-semibold">BTS SIO option SISR</strong>.</p>
+                        <p>Mon objectif est de concevoir des infrastructures sécurisées et robustes. Curieux et autodidacte, je combine mes études avec des projets personnels pratiques pour monter en compétence sur l'administration Linux, Windows Server et la Cybersécurité.</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 border-t border-[#27272a] pt-12">
+                    
+                    <div>
+                        <h3 class="text-xs font-mono text-white uppercase tracking-widest mb-10">> Expériences</h3>
+                        <div class="relative">
+                            <div class="absolute left-[3.5px] top-2 bottom-0 w-px bg-[#27272a] z-0"></div>
+
+                            <div class="space-y-12 relative z-10">                  
+                                <div class="relative pl-8">
+                                    <div class="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-white ring-[5px] ring-black"></div>
+                                    <span class="text-white text-[10px] font-mono tracking-widest block mb-2">2024 — Présent</span>
+                                    <h4 class="text-sm md:text-base font-bold text-white mb-1">Employé Polyvalent</h4>
+                                    <p class="text-zinc-500 text-xs md:text-sm mb-2">Auchan La Défense</p>
+                                    <ul class="text-zinc-400 text-[11px] space-y-1 list-disc list-inside leading-relaxed">
+                                        <li>Accueil, orientation et fidélisation de la clientèle.</li>
+                                        <li>Gestion des encaissements et maintien de la fluidité en caisse.</li>
+                                        <li>Travail en équipe et gestion du stress en période de forte affluence.</li>
+                                        <li>Développement d'un fort sens du service client et de la communication.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="relative pl-8">
+                                    <div class="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-white ring-[5px] ring-black"></div>
+                                    <span class="text-white text-[10px] font-mono tracking-widest block mb-2">2022 — Présent</span>
+                                    <h4 class="text-sm md:text-base font-bold text-white mb-1">Technicien Hardware & Réseaux</h4>
+                                    <p class="text-zinc-500 text-xs md:text-sm mb-2">Freelance / Projets Personnels</p>
+                                    <ul class="text-zinc-400 text-[11px] space-y-1 list-disc list-inside leading-relaxed">
+                                        <li>Conseil, assemblage et montage de PC sur mesure selon les besoins.</li>
+                                        <li>Diagnostic et dépannage matériel (hardware) et logiciel (software).</li>
+                                        <li>Installation d'OS (Windows/Linux) et configuration de réseaux locaux.</li>
+                                        <li>Sensibilisation des utilisateurs aux bonnes pratiques de cybersécurité.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xs font-mono text-white uppercase tracking-widest mb-10">> Formation</h3>
+                        <div class="relative">
+                            <div class="absolute left-[3.5px] top-2 bottom-0 w-px bg-[#27272a] z-0"></div>
+
+                            <div class="space-y-12 relative z-10">                  
+                                <div class="relative pl-8">
+                                    <div class="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-white ring-[5px] ring-black"></div>
+                                    <span class="text-white text-[10px] font-mono tracking-widest block mb-2">2025 — 2027</span>
+                                    <h4 class="text-sm md:text-base font-bold text-white mb-1">BTS Services Informatiques aux Organisations</h4>
+                                    <p class="text-zinc-500 text-xs md:text-sm mb-2">Ynov Paris (Nanterre) - Option SISR</p>
+                                    <ul class="text-zinc-400 text-[11px] space-y-1 list-disc list-inside leading-relaxed">
+                                        <li>Administration Windows Server (AD, GPO) et Linux (Debian).</li>
+                                        <li>Configuration d'équipements réseaux Cisco (VLAN, Routage).</li>
+                                        <li>Mise en place de solutions de cybersécurité et de monitoring.</li>
+                                        <li>Gestion de parc informatique via GLPI.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="relative pl-8">
+                                    <div class="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-[#3f3f46] ring-[5px] ring-black"></div>
+                                    <span class="text-zinc-500 text-[10px] font-mono tracking-widest block mb-2">2023 — 2025</span>
+                                    <h4 class="text-sm md:text-base font-bold text-zinc-300 mb-1">Classe Préparatoire aux Grandes Écoles</h4>
+                                    <p class="text-zinc-500 text-xs md:text-sm mb-2">Lycée Paul Valéry (Paris) - Filière MP2I</p>
+                                    <ul class="text-zinc-400 text-[11px] space-y-1 list-disc list-inside leading-relaxed">
+                                        <li>Classe Préparatoire Mathématiques, Physique, Ingénierie & Informatique.</li>
+                                        <li>Acquisition d'une méthode de travail rigoureuse et analytique.</li>
+                                        <li>Développement des capacités de résolution de problèmes complexes.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="relative pl-8">
+                                    <div class="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-[#3f3f46] ring-[5px] ring-black"></div>
+                                    <span class="text-zinc-500 text-[10px] font-mono tracking-widest block mb-2">2021 — 2023</span>
+                                    <h4 class="text-sm md:text-base font-bold text-zinc-300 mb-1">Baccalauréat Général et Technologique</h4>
+                                    <p class="text-zinc-500 text-xs md:text-sm mb-2">Lycée Maurice Ravel (Paris) <span class="text-zinc-400 italic">— Mention Très Bien</span></p>
+                                    <ul class="text-zinc-400 text-[11px] space-y-1 list-disc list-inside leading-relaxed">
+                                        <li>Spécialités Mathématiques & Physique-Chimie avec un fort attrait pour l'analyse scientifique.</li>
+                                        <li>Développement d'un socle solide en sciences fondamentales et méthodologie de travail.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-20 border-t border-[#27272a] pt-12">
+                    <h3 class="text-xs font-mono text-white uppercase tracking-widest mb-10">> Compétences Techniques</h3>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="border border-[#27272a] hover:border-white transition-all duration-300 bg-black p-6 flex flex-col items-center justify-center h-28 group cursor-default">
+                            <i class="fab fa-windows text-2xl text-zinc-500 group-hover:text-white transition-colors mb-3"></i>
+                            <span class="text-[10px] font-bold tracking-widest text-zinc-500 group-hover:text-white transition-colors uppercase">Win Server</span>
+                        </div>
+                        <div class="border border-[#27272a] hover:border-white transition-all duration-300 bg-black p-6 flex flex-col items-center justify-center h-28 group cursor-default">
+                            <i class="fab fa-linux text-2xl text-zinc-500 group-hover:text-white transition-colors mb-3"></i>
+                            <span class="text-[10px] font-bold tracking-widest text-zinc-500 group-hover:text-white transition-colors uppercase">Linux</span>
+                        </div>
+                        <div class="border border-[#27272a] hover:border-white transition-all duration-300 bg-black p-6 flex flex-col items-center justify-center h-28 group cursor-default">
+                            <i class="fas fa-server text-2xl text-zinc-500 group-hover:text-white transition-colors mb-3"></i>
+                            <span class="text-[10px] font-bold tracking-widest text-zinc-500 group-hover:text-white transition-colors uppercase">VMware</span>
+                        </div>
+                        <div class="border border-[#27272a] hover:border-white transition-all duration-300 bg-black p-6 flex flex-col items-center justify-center h-28 group cursor-default">
+                            <i class="fas fa-network-wired text-2xl text-zinc-500 group-hover:text-white transition-colors mb-3"></i>
+                            <span class="text-[10px] font-bold tracking-widest text-zinc-500 group-hover:text-white transition-colors uppercase">CISCO</span>
+                        </div>
+                        <div class="border border-[#27272a] hover:border-white transition-all duration-300 bg-black p-6 flex flex-col items-center justify-center h-28 group cursor-default">
+                            <i class="fas fa-wave-square text-2xl text-zinc-500 group-hover:text-white transition-colors mb-3"></i>
+                            <span class="text-[10px] font-bold tracking-widest text-zinc-500 group-hover:text-white transition-colors uppercase">Wireshark</span>
+                        </div>
+                        <div class="border border-[#27272a] hover:border-white transition-all duration-300 bg-black p-6 flex flex-col items-center justify-center h-28 group cursor-default">
+                            <i class="fas fa-terminal text-2xl text-zinc-500 group-hover:text-white transition-colors mb-3"></i>
+                            <span class="text-[10px] font-bold tracking-widest text-zinc-500 group-hover:text-white transition-colors uppercase">Terminal</span>
+                        </div>
+                        <div class="border border-[#27272a] hover:border-white transition-all duration-300 bg-black p-6 flex flex-col items-center justify-center h-28 group cursor-default">
+                            <i class="fab fa-python text-2xl text-zinc-500 group-hover:text-white transition-colors mb-3"></i>
+                            <span class="text-[10px] font-bold tracking-widest text-zinc-500 group-hover:text-white transition-colors uppercase">Python</span>
+                        </div>
+                        <div class="border border-[#27272a] hover:border-white transition-all duration-300 bg-black p-6 flex flex-col items-center justify-center h-28 group cursor-default">
+                            <i class="fas fa-code text-2xl text-zinc-500 group-hover:text-white transition-colors mb-3"></i>
+                            <span class="text-[10px] font-bold tracking-widest text-zinc-500 group-hover:text-white transition-colors uppercase">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-[#27272a] py-8 text-center text-xs font-mono text-zinc-500">
+        <p>© 2026 Jeniffan John Arulthasan. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            if(menu.classList.contains('flex')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+                document.body.style.overflow = 'hidden';
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E5 - Projets Techniques | Jeniffan J. Arulthasan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body { background-color: #000000; color: #a1a1aa; overflow-x: hidden; }
+        .bg-grid { background-size: 40px 40px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px); position: fixed; inset: 0; z-index: -1; }
+        .border-subtle { border: 1px solid #27272a; }
+        .card-hover:hover { border-color: #ffffff; transition: all 0.3s ease; }
+        .tag { border: 1px solid #3f3f46; color: #d4d4d8; padding: 2px 8px; font-size: 10px; font-family: monospace; text-transform: uppercase; border-radius: 2px; }
+        .tag-speciality { border: 1px solid #ffffff; color: #000000; background-color: #ffffff; padding: 2px 8px; font-size: 10px; font-family: monospace; text-transform: uppercase; border-radius: 2px; font-weight: bold; }
+    </style>
+</head>
+<body class="relative min-h-screen flex flex-col font-sans selection:bg-white selection:text-black">
+
+    <div class="bg-grid"></div>
+
+    <nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-subtle">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-bold text-xl tracking-tight text-white z-50 relative">JENIFFAN_</a>
+            <div class="hidden lg:flex space-x-8 text-xs font-semibold uppercase tracking-widest text-zinc-400">
+                <a href="index.html" class="hover:text-white transition-colors">Accueil</a>
+                <a href="propos.html" class="hover:text-white transition-colors">À propos</a>
+                <a href="bts-sio.html" class="hover:text-white transition-colors">BTS SIO</a>
+                <a href="parcours.html" class="hover:text-white transition-colors">École/Entreprise</a>
+                <a href="e5.html" class="text-white">E5</a>
+                <a href="e6.html" class="hover:text-white transition-colors">E6</a>
+                <a href="veille.html" class="hover:text-white transition-colors">Veille</a>
+                <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+            </div>
+            <button onclick="toggleMenu()" class="lg:hidden text-zinc-400 hover:text-white focus:outline-none z-50 relative">
+                <i class="fas fa-bars text-2xl" id="menu-icon"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="fixed inset-0 bg-black z-40 hidden flex-col justify-center items-center space-y-8 text-sm font-semibold uppercase tracking-widest text-zinc-400 lg:hidden">
+            <a href="index.html" class="hover:text-white transition-colors">Accueil</a>
+            <a href="propos.html" class="hover:text-white transition-colors">À propos</a>
+            <a href="bts-sio.html" class="hover:text-white transition-colors">BTS SIO</a>
+            <a href="parcours.html" class="hover:text-white transition-colors">École/Entreprise</a>
+            <a href="e5.html" class="text-white">E5</a>
+            <a href="e6.html" class="hover:text-white transition-colors">E6</a>
+            <a href="veille.html" class="hover:text-white transition-colors">Veille</a>
+            <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-7xl mx-auto px-6 pt-32 pb-20 w-full space-y-16">
+        
+        <div class="text-center max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tighter">
+                Épreuve E5.
+            </h1>
+            <p class="text-zinc-400 leading-relaxed text-sm md:text-base">
+                Documentation des projets techniques et des solutions d'infrastructure mises en œuvre durant mon cursus.
+            </p>
+        </div>
+
+        <div>
+            <h3 class="text-sm font-mono text-white uppercase tracking-widest mb-8 border-b border-subtle pb-4">> Projets Globaux (Tronc Commun)</h3>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-[#09090b] p-6 border border-subtle rounded-sm card-hover flex flex-col h-full">
+                    <div class="mb-4"><span class="tag">Système</span></div>
+                    <h3 class="text-xl font-bold text-white mb-2">Windows Server</h3>
+                    <p class="text-sm text-zinc-400 mb-8">Déploiement AD DS, gestion des utilisateurs, groupes et mise en place des GPO de sécurité.</p>
+                    <a href="assets/docs/E5_Windows.pdf" target="_blank" class="w-full mt-auto py-4 sm:py-3 bg-white text-black text-center font-bold text-xs uppercase tracking-widest hover:bg-zinc-200 transition rounded-sm">
+                        Voir la doc
+                    </a>
+                </div>
+
+                <div class="bg-[#09090b] p-6 border border-subtle rounded-sm card-hover flex flex-col h-full">
+                    <div class="mb-4"><span class="tag">Système</span></div>
+                    <h3 class="text-xl font-bold text-white mb-2">Debian</h3>
+                    <p class="text-sm text-zinc-400 mb-8">Installation, configuration et administration avancée sous environnement GNU/Linux.</p>
+                    <a href="assets/docs/E5_Debian.pdf" target="_blank" class="w-full mt-auto py-4 sm:py-3 bg-white text-black text-center font-bold text-xs uppercase tracking-widest hover:bg-zinc-200 transition rounded-sm">
+                        Voir la doc
+                    </a>
+                </div>
+
+                <div class="bg-[#09090b] p-6 border border-subtle rounded-sm card-hover flex flex-col h-full">
+                    <div class="mb-4"><span class="tag">Cybersécurité</span></div>
+                    <h3 class="text-xl font-bold text-white mb-2">Kali Linux</h3>
+                    <p class="text-sm text-zinc-400 mb-8">Audit de sécurité réseau, utilisation d'outils offensifs (Nmap) et analyse des vulnérabilités.</p>
+                    <a href="assets/docs/E5_Kali.pdf" target="_blank" class="w-full mt-auto py-4 sm:py-3 bg-white text-black text-center font-bold text-xs uppercase tracking-widest hover:bg-zinc-200 transition rounded-sm">
+                        Voir la doc
+                    </a>
+                </div>
+
+                <div class="bg-[#09090b] p-6 border border-subtle rounded-sm card-hover flex flex-col h-full">
+                    <div class="mb-4"><span class="tag">Ticketing</span></div>
+                    <h3 class="text-xl font-bold text-white mb-2">GLPI</h3>
+                    <p class="text-sm text-zinc-400 mb-8">Mise en place d'un Helpdesk, gestion des incidents (tickets) et suivi du cycle de vie matériel.</p>
+                    <a href="assets/docs/E5_GLPI.pdf" target="_blank" class="w-full mt-auto py-4 sm:py-3 bg-white text-black text-center font-bold text-xs uppercase tracking-widest hover:bg-zinc-200 transition rounded-sm">
+                        Voir la doc
+                    </a>
+                </div>
+
+                <div class="bg-[#09090b] p-6 border border-subtle rounded-sm card-hover flex flex-col h-full">
+                    <div class="mb-4"><span class="tag">Inventaire</span></div>
+                    <h3 class="text-xl font-bold text-white mb-2">OCS Inventory</h3>
+                    <p class="text-sm text-zinc-400 mb-8">Déploiement de la solution pour la découverte automatisée et l'inventaire du parc informatique.</p>
+                    <a href="assets/docs/E5_OCS.pdf" target="_blank" class="w-full mt-auto py-4 sm:py-3 bg-white text-black text-center font-bold text-xs uppercase tracking-widest hover:bg-zinc-200 transition rounded-sm">
+                        Voir la doc
+                    </a>
+                </div>
+
+                <div class="bg-[#09090b] p-6 border border-subtle rounded-sm card-hover flex flex-col h-full">
+                    <div class="mb-4"><span class="tag">Web Server</span></div>
+                    <h3 class="text-xl font-bold text-white mb-2">Apache Web</h3>
+                    <p class="text-sm text-zinc-400 mb-8">Mise en place d'un serveur Web, configuration des Virtual Hosts et certificats sécurisés.</p>
+                    <a href="assets/docs/E5_Apache.pdf" target="_blank" class="w-full mt-auto py-4 sm:py-3 bg-white text-black text-center font-bold text-xs uppercase tracking-widest hover:bg-zinc-200 transition rounded-sm">
+                        Voir la doc
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-sm font-mono text-white uppercase tracking-widest mb-8 border-b border-subtle pb-4">> Projets Spécialité (Option SISR)</h3>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-[#09090b] p-6 border border-subtle rounded-sm card-hover flex flex-col h-full">
+                    <div class="mb-4"><span class="tag-speciality">Réseau SISR</span></div>
+                    <h3 class="text-lg font-bold text-white mb-2">Redondance STP</h3>
+                    <p class="text-xs text-zinc-400 mb-6">Mise en œuvre du protocole Spanning Tree (STP) pour éviter les boucles réseaux et assurer la redondance.</p>
+                    <a href="assets/docs/E5_STP.pdf" target="_blank" class="w-full mt-auto py-3 bg-white text-black text-center font-bold text-[10px] uppercase tracking-widest hover:bg-zinc-200 transition rounded-sm">
+                        Voir la doc
+                    </a>
+                </div>
+
+                <div class="bg-[#09090b] p-6 border border-subtle rounded-sm card-hover flex flex-col h-full">
+                    <div class="mb-4"><span class="tag-speciality">Réseau SISR</span></div>
+                    <h3 class="text-lg font-bold text-white mb-2">Routage Statique</h3>
+                    <p class="text-xs text-zinc-400 mb-6">Configuration des tables de routage (Cisco), interconnexion de réseaux distincts et maîtrise des flux.</p>
+                    <a href="assets/docs/E5_Routage.pdf" target="_blank" class="w-full mt-auto py-3 bg-white text-black text-center font-bold text-[10px] uppercase tracking-widest hover:bg-zinc-200 transition rounded-sm">
+                        Voir la doc
+                    </a>
+                </div>
+
+                <div class="bg-[#09090b] p-6 border border-subtle rounded-sm card-hover flex flex-col h-full">
+                    <div class="mb-4"><span class="tag-speciality">Réseau SISR</span></div>
+                    <h3 class="text-lg font-bold text-white mb-2">Projet DHCP</h3>
+                    <p class="text-xs text-zinc-400 mb-6">Déploiement et configuration d'un serveur DHCP pour l'attribution dynamique des configurations IP.</p>
+                    <a href="assets/docs/E5_DHCP.pdf" target="_blank" class="w-full mt-auto py-3 bg-white text-black text-center font-bold text-[10px] uppercase tracking-widest hover:bg-zinc-200 transition rounded-sm">
+                        Voir la doc
+                    </a>
+                </div>
+
+                <div class="bg-[#09090b] p-6 border border-subtle rounded-sm card-hover flex flex-col h-full">
+                    <div class="mb-4"><span class="tag-speciality">Réseau SISR</span></div>
+                    <h3 class="text-lg font-bold text-white mb-2">Config. VLAN</h3>
+                    <p class="text-xs text-zinc-400 mb-6">Segmentation du trafic, isolation des domaines de diffusion et mise en place du routage inter-VLAN.</p>
+                    <a href="assets/docs/E5_VLAN.pdf" target="_blank" class="w-full mt-auto py-3 bg-white text-black text-center font-bold text-[10px] uppercase tracking-widest hover:bg-zinc-200 transition rounded-sm">
+                        Voir la doc
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-full bg-black p-12 border border-[#27272a] border-dashed rounded-sm flex flex-col items-center justify-center text-center mt-12 min-h-[250px]">
+            <i class="fas fa-lock text-zinc-600 text-3xl sm:text-4xl mb-6"></i>
+            <h3 class="text-base sm:text-lg font-mono text-zinc-500 uppercase tracking-[0.2em] mb-3">Projets de 2ème année</h3>
+            <p class="text-sm text-zinc-600">Déchiffrement prévu : 2026</p>
+        </div>
+
+    </main>
+
+    <footer class="border-t border-subtle py-8 text-center text-xs font-mono text-zinc-500">
+        <p>© 2026 Jeniffan John Arulthasan. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            if(menu.classList.contains('flex')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+                document.body.style.overflow = 'hidden';
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>
