@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Jeniffan John Arulthasan — étudiant BTS SIO SISR à Ynov Campus Paris, major de promotion. Infrastructure IT, cybersécurité, administration système. Recherche alternance sept. 2026.">
     <title>Accueil | Jeniffan J. Arulthasan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -88,6 +89,7 @@
                     Me Contacter
                 </a>
             </div>
+
         </div>
 
         <div class="relative w-full max-w-lg mx-auto lg:mr-0 order-1 lg:order-2">
@@ -106,24 +108,32 @@
                     <div class="absolute bottom-0 left-0 w-full h-8 bg-gradient-to-t from-black to-transparent z-10"></div>
                     <div class="logs-wrapper">
                         <div class="log-block">
-                            <span class="log-line">> init system_check.sh</span>
-                            <span class="log-line">[<span class="log-highlight">OK</span>] System integrity verified.</span>
-                            <span class="log-line">[<span class="log-highlight">NET</span>] Secure VPN tunnel established.</span>
-                            <span class="log-line">[<span class="log-highlight">AUTH</span>] User 'admin' logged in.</span>
-                            <span class="log-line">[WARN] Port scan detected from external IP.</span>
-                            <span class="log-line">[<span class="log-highlight">AUTO</span>] Firewall rule #455 applied. Threat blocked.</span>
-                            <span class="log-line">[<span class="log-highlight">SRV</span>] Windows Server Update Services: Sync OK.</span>
-                            <span class="log-line">> awaiting new instructions...</span><br>
+                            <span class="log-line">> init network_audit.sh</span>
+                            <span class="log-line">[<span class="log-highlight">INFO</span>] Starting infrastructure check...</span>
+                            <span class="log-line">[<span class="log-highlight">DNS</span>] Resolving dc01.corp.local — OK</span>
+                            <span class="log-line">[<span class="log-highlight">AD</span>] Active Directory sync: 156 objects</span>
+                            <span class="log-line">[<span class="log-highlight">NET</span>] VPN tunnel: UP (AES-256-GCM)</span>
+                            <span class="log-line">[<span class="log-highlight">GPO</span>] Group Policy refresh: applied</span>
+                            <span class="log-line">[WARN] Failed login: 3 attempts — admin@corp</span>
+                            <span class="log-line">[<span class="log-highlight">FW</span>] Firewall rule #458: IP 185.x.x.x blocked</span>
+                            <span class="log-line">[<span class="log-highlight">SCAN</span>] Nmap: 254 hosts, 0 critical open ports</span>
+                            <span class="log-line">[<span class="log-highlight">SRV</span>] WSUS: 12 updates deployed successfully</span>
+                            <span class="log-line">[<span class="log-highlight">OK</span>] Backup: completed — 2.3 GB encrypted</span>
+                            <span class="log-line">> system secured_</span>
                         </div>
                         <div class="log-block">
-                            <span class="log-line">> init system_check.sh</span>
-                            <span class="log-line">[<span class="log-highlight">OK</span>] System integrity verified.</span>
-                            <span class="log-line">[<span class="log-highlight">NET</span>] Secure VPN tunnel established.</span>
-                            <span class="log-line">[<span class="log-highlight">AUTH</span>] User 'admin' logged in.</span>
-                            <span class="log-line">[WARN] Port scan detected from external IP.</span>
-                            <span class="log-line">[<span class="log-highlight">AUTO</span>] Firewall rule #455 applied. Threat blocked.</span>
-                            <span class="log-line">[<span class="log-highlight">SRV</span>] Windows Server Update Services: Sync OK.</span>
-                            <span class="log-line">> awaiting new instructions...</span><br>
+                            <span class="log-line">> init network_audit.sh</span>
+                            <span class="log-line">[<span class="log-highlight">INFO</span>] Starting infrastructure check...</span>
+                            <span class="log-line">[<span class="log-highlight">DNS</span>] Resolving dc01.corp.local — OK</span>
+                            <span class="log-line">[<span class="log-highlight">AD</span>] Active Directory sync: 156 objects</span>
+                            <span class="log-line">[<span class="log-highlight">NET</span>] VPN tunnel: UP (AES-256-GCM)</span>
+                            <span class="log-line">[<span class="log-highlight">GPO</span>] Group Policy refresh: applied</span>
+                            <span class="log-line">[WARN] Failed login: 3 attempts — admin@corp</span>
+                            <span class="log-line">[<span class="log-highlight">FW</span>] Firewall rule #458: IP 185.x.x.x blocked</span>
+                            <span class="log-line">[<span class="log-highlight">SCAN</span>] Nmap: 254 hosts, 0 critical open ports</span>
+                            <span class="log-line">[<span class="log-highlight">SRV</span>] WSUS: 12 updates deployed successfully</span>
+                            <span class="log-line">[<span class="log-highlight">OK</span>] Backup: completed — 2.3 GB encrypted</span>
+                            <span class="log-line">> system secured_</span>
                         </div>
                     </div>
                 </div>
