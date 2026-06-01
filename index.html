@@ -14,10 +14,7 @@
         .card-hover:hover { border-color: #ffffff; transition: all 0.3s ease; }
         .cursor-blink { animation: blink 1s step-end infinite; }
         @keyframes blink { 50% { opacity: 0; } }
-        .logs-container { height: 140px; overflow: hidden; position: relative; }
-        .logs-wrapper { animation: scrollLogs 15s linear infinite; }
-        @keyframes scrollLogs { 0% { transform: translateY(0); } 100% { transform: translateY(-50%); } }
-        .log-line { font-family: 'Courier New', monospace; font-size: 11px; padding: 4px 0; display: block; color: #71717a; }
+        .log-line { font-family: 'Courier New', monospace; font-size: 11px; padding: 3px 0; display: block; color: #71717a; }
         .log-highlight { color: #ffffff; font-weight: bold; }
     </style>
 </head>
@@ -75,9 +72,9 @@
                     <i class="fas fa-terminal text-white"></i>
                     <span>Infrastructure IT & Cybersécurité</span>
                 </h2>
-                
+
                 <p class="text-zinc-400 text-sm md:text-base leading-relaxed max-w-lg mt-6 border-l border-zinc-700 pl-4">
-                    Étudiant en BTS SIO SISR à Ynov Paris. Je conçois, administre et sécurise des architectures réseaux et systèmes. Focus sur le maintien en condition opérationnelle et la protection des données.
+                    Étudiant en BTS SIO SISR à Ynov Paris. Je conçois, administre et sécurise des architectures réseaux et systèmes. Disponible en alternance dès septembre 2026.
                 </p>
             </div>
 
@@ -103,39 +100,19 @@
                     </div>
                 </div>
 
-                <div class="logs-container bg-black p-4 md:p-6 relative z-20 flex-grow">
-                    <div class="absolute top-0 left-0 w-full h-8 bg-gradient-to-b from-black to-transparent z-10"></div>
-                    <div class="absolute bottom-0 left-0 w-full h-8 bg-gradient-to-t from-black to-transparent z-10"></div>
-                    <div class="logs-wrapper">
-                        <div class="log-block">
-                            <span class="log-line">> init network_audit.sh</span>
-                            <span class="log-line">[<span class="log-highlight">INFO</span>] Starting infrastructure check...</span>
-                            <span class="log-line">[<span class="log-highlight">DNS</span>] Resolving dc01.corp.local — OK</span>
-                            <span class="log-line">[<span class="log-highlight">AD</span>] Active Directory sync: 156 objects</span>
-                            <span class="log-line">[<span class="log-highlight">NET</span>] VPN tunnel: UP (AES-256-GCM)</span>
-                            <span class="log-line">[<span class="log-highlight">GPO</span>] Group Policy refresh: applied</span>
-                            <span class="log-line">[WARN] Failed login: 3 attempts — admin@corp</span>
-                            <span class="log-line">[<span class="log-highlight">FW</span>] Firewall rule #458: IP 185.x.x.x blocked</span>
-                            <span class="log-line">[<span class="log-highlight">SCAN</span>] Nmap: 254 hosts, 0 critical open ports</span>
-                            <span class="log-line">[<span class="log-highlight">SRV</span>] WSUS: 12 updates deployed successfully</span>
-                            <span class="log-line">[<span class="log-highlight">OK</span>] Backup: completed — 2.3 GB encrypted</span>
-                            <span class="log-line">> system secured_</span>
-                        </div>
-                        <div class="log-block">
-                            <span class="log-line">> init network_audit.sh</span>
-                            <span class="log-line">[<span class="log-highlight">INFO</span>] Starting infrastructure check...</span>
-                            <span class="log-line">[<span class="log-highlight">DNS</span>] Resolving dc01.corp.local — OK</span>
-                            <span class="log-line">[<span class="log-highlight">AD</span>] Active Directory sync: 156 objects</span>
-                            <span class="log-line">[<span class="log-highlight">NET</span>] VPN tunnel: UP (AES-256-GCM)</span>
-                            <span class="log-line">[<span class="log-highlight">GPO</span>] Group Policy refresh: applied</span>
-                            <span class="log-line">[WARN] Failed login: 3 attempts — admin@corp</span>
-                            <span class="log-line">[<span class="log-highlight">FW</span>] Firewall rule #458: IP 185.x.x.x blocked</span>
-                            <span class="log-line">[<span class="log-highlight">SCAN</span>] Nmap: 254 hosts, 0 critical open ports</span>
-                            <span class="log-line">[<span class="log-highlight">SRV</span>] WSUS: 12 updates deployed successfully</span>
-                            <span class="log-line">[<span class="log-highlight">OK</span>] Backup: completed — 2.3 GB encrypted</span>
-                            <span class="log-line">> system secured_</span>
-                        </div>
-                    </div>
+                <div class="bg-black p-4 md:p-6 flex-grow overflow-hidden">
+                    <span class="log-line">> init network_audit.sh</span>
+                    <span class="log-line">[<span class="log-highlight">INFO</span>] Starting infrastructure check...</span>
+                    <span class="log-line">[<span class="log-highlight">DNS</span>] Resolving dc01.corp.local — OK</span>
+                    <span class="log-line">[<span class="log-highlight">AD</span>] Active Directory sync: 156 objects</span>
+                    <span class="log-line">[<span class="log-highlight">NET</span>] VPN tunnel: UP (AES-256-GCM)</span>
+                    <span class="log-line">[<span class="log-highlight">GPO</span>] Group Policy refresh: applied</span>
+                    <span class="log-line">[WARN] Failed login: 3 attempts — admin@corp</span>
+                    <span class="log-line">[<span class="log-highlight">FW</span>] Firewall rule #458: IP 185.x.x.x blocked</span>
+                    <span class="log-line">[<span class="log-highlight">SCAN</span>] Nmap: 254 hosts, 0 critical open ports</span>
+                    <span class="log-line">[<span class="log-highlight">SRV</span>] WSUS: 12 updates deployed successfully</span>
+                    <span class="log-line">[<span class="log-highlight">OK</span>] Backup: completed — 2.3 GB encrypted</span>
+                    <span class="log-line">> system secured<span class="cursor-blink">_</span></span>
                 </div>
             </div>
         </div>
